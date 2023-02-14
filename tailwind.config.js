@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary: {
           100: "#f5a88e",
+          200: "#e4e4e4",
         },
         fontSize: {
           large: "62px",
