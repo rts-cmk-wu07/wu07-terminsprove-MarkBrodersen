@@ -1,5 +1,5 @@
 import { AnimatePresence } from "framer-motion";
-import { Triangle, Menu } from "lucide-react";
+import { Triangle, Menu, X } from "lucide-react";
 import { useState } from "react";
 import BurgerMenu from "../components/BurgerMenu";
 export default function Navigation() {
@@ -10,12 +10,12 @@ export default function Navigation() {
         <Triangle className="text-primary-200 fill-primary-200 w-8 h-8" />
         <h1 className="text-[28px]">Popular Classes</h1>
         <div
-          className="text-primary-200 z-30"
+          className="text-primary-200 z-50"
           onClick={() => {
             setOpen(!open);
           }}
         >
-          <Menu className="w-8 h-8" />
+          {!open ? <Menu className="w-8 h-8" /> : <X className="w-8 h-8" />}
         </div>
       </div>
       <AnimatePresence>{open === true ? <BurgerMenu /> : null}</AnimatePresence>

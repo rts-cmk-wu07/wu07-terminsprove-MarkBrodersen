@@ -1,4 +1,6 @@
+import PopularClass from "./components/PopularClass";
 import useAxios from "./hooks/useAxios";
+import ClassesList from "./components/ClassesList";
 import Navigation from "./templates/Navigation";
 
 function App() {
@@ -6,10 +8,19 @@ function App() {
   console.log(data);
   return (
     <>
-      <Navigation />
-      <div className="App">
-        <div></div>
-      </div>
+      
+      <main className="App">
+        <PopularClass data={data} />
+        <div>
+          <h2 className="mb-8 text-[28px]">Classes for you</h2>
+          <div className="flex overflow-hidden">
+            {data &&
+              data.map((item) => {
+                return <ClassesList key={item.id} item={item} />;
+              })}
+          </div>
+        </div>
+      </main>
     </>
   );
 }

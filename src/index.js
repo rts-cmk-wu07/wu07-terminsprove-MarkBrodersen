@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App";
 import Layout from "./templates/Layout";
 import Welcome from "./pages/Welcome";
+import ClassDetails from "./pages/ClassDetails";
 
 const router = createBrowserRouter([
   {
@@ -12,12 +13,32 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
+        path: "/home",
+        element: <App />,
+      },
+      {
         path: "/welcome",
         element: <Welcome />,
       },
       {
-        path: "/home",
+        path: "/search",
         element: <App />,
+      },
+      {
+        path: "/myschedule",
+        element: <App />,
+      },
+      {
+        path: "/signin",
+        element: <App />,
+      },
+      {
+        path: "/logind",
+        element: <App />,
+      },
+      {
+        path: "/classDetails/:id",
+        element: <ClassDetails />,
       },
     ],
   },
