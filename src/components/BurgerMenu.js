@@ -14,7 +14,9 @@ export default function BurgerMenu() {
     >
       <ul className="text-[28px]">
         <li className="my-4">
-          <Link to="/home">Home</Link>
+          <Link onClick={console.log("hejsa")} to="/home">
+            Home
+          </Link>
         </li>
         <li className="my-4">
           <Link to="/search">Search</Link>

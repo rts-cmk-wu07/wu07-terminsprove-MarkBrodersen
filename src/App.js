@@ -8,7 +8,6 @@ function App() {
   console.log(data);
   return (
     <>
-      
       <main className="App">
         <PopularClass data={data} />
         <div>
