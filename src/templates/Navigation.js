@@ -1,13 +1,14 @@
 import { AnimatePresence } from "framer-motion";
 import { Triangle, Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import BurgerMenu from "../components/BurgerMenu";
+import openContext from "../context/openContext";
 export default function Navigation() {
-  const [open, setOpen] = useState(false);
   const navigate = useNavigate();
+  const { open, setOpen } = useContext(openContext);
   function backBtn() {
-    navigate(1);
+    navigate("/home");
   }
   return (
     <>

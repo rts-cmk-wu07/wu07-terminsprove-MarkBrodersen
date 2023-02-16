@@ -9,6 +9,7 @@ export default function ClassDetails() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [awaitState, setAwaitState] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -22,18 +23,25 @@ export default function ClassDetails() {
       })
       .finally(() => {
         setLoading(false);
+        setAwaitState(true);
       });
-    axios
-      .get("http://localhost:4000/api/v1/trainers/1")
-      .then((response) => {
-        setperson(response.person);
-      })
-      .catch((err) => {
-        setError(err);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+    function asyncFunc() {
+      axios
+        .get("http://localhost:4000/api/v1/trainers/1")
+        .then((response) => {
+          setperson(response.person);
+        })
+        .catch((err) => {
+          setError(err);
+        })
+        .finally(() => {
+          setLoading(false);
+          console.log("hejas");
+        });
+    }
+    if (awaitState) {
+      asyncFunc();
+    }
   }, []);
 
   console.log(data);
@@ -42,7 +50,9 @@ export default function ClassDetails() {
     <section>
       {data && (
         <>
-          <div></div>
+          <div>
+            <img className="" src={data.asset.url} alt="" />
+          </div>
           <ScheduleItem item={data} CD={true} />
           <p>{data.classDescription}</p>
           <div>

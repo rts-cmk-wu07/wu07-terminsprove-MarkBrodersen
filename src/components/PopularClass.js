@@ -11,15 +11,17 @@ export default function PopularClass() {
             to={`/classDetails/${data.id}`}
             className="z-10 rounded-2xl relative overflow-hidden"
           >
-            <img
-              className="rounded-2xl object-cover"
-              src={data.asset.url}
-              alt={data.className}
-            />
-            <div className="bg-gradient-to-t from-[#00000020] to-[#00000040] absolute inset-0 rounded-2xl"></div>
-            <p className="z-20 text-white text-[50px] -translate-y-36 translate-x-4">
-              {data.className}
-            </p>
+            <div className="max-h-[400px] overflow-hidden">
+              <img
+                className="rounded-2xl object-cover min-h-[400px]"
+                src={data.asset.url}
+                alt={data.className}
+              />
+              <div className="bg-gradient-to-t from-[#00000020] to-[#00000040] absolute inset-0 rounded-2xl"></div>
+              <p className="z-20 text-white text-[50px] -translate-y-36 translate-x-4">
+                {data.className}
+              </p>
+            </div>
           </Link>
         </>
       )}

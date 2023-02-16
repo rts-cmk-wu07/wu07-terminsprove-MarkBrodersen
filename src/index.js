@@ -6,6 +6,7 @@ import App from "./App";
 import Layout from "./templates/Layout";
 import Welcome from "./pages/Welcome";
 import ClassDetails from "./pages/ClassDetails";
+import LogInOut from "./pages/LogInOut";
 
 const router = createBrowserRouter([
   {
@@ -29,12 +30,12 @@ const router = createBrowserRouter([
         element: <App />,
       },
       {
-        path: "/signin",
-        element: <App />,
+        path: "/logout",
+        element: <LogInOut />,
       },
       {
         path: "/logind",
-        element: <App />,
+        element: <LogInOut />,
       },
       {
         path: "/classDetails/:id",
