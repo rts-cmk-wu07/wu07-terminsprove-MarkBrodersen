@@ -45,3 +45,7 @@ Jeg valgte at bruge `lucide-react` som min icon pakke da den har mange forskelli
 ### React-use-cookie
 
 Jeg bruger `react-use-cookie` da den gør det nemt at arbejde med cookies
+
+## Animationer
+
+Jeg har lavet små animationer rundt på siden for at gøre den mere livlig

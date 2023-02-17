@@ -21,7 +21,6 @@ export default function ClassDetails() {
         setData(response.data);
         personId = data.trainerId;
       }
-      console.log(response);
       await axios
         .get(`http://localhost:4000/api/v1/trainers/${personId}`)
         .then((response) => {
@@ -37,8 +36,6 @@ export default function ClassDetails() {
     asyncFunc();
   }, []);
 
-  console.log(data);
-  console.log(person);
   return (
     <section>
       {data && (

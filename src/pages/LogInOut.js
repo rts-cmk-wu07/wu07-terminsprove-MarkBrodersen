@@ -22,10 +22,8 @@ export default function LogInOut() {
         navigate("/");
       })
       .catch(function (error) {
-        console.log(error);
       });
   }
-  console.log(token);
   function handleLogOut() {
     setToken("");
     navigate("/");

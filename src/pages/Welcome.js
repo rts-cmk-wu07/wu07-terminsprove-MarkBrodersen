@@ -6,10 +6,8 @@ export default function Welcome() {
   sessionStorage.setItem("key", "false");
   function handleClick() {
     sessionStorage.setItem("key", "true");
-    console.log(sessionStorage.getItem("key"));
     navigate(0);
   }
-  console.log(sessionStorage.getItem("key"));
 
   return (
     <>

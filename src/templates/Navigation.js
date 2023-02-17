@@ -11,7 +11,6 @@ export default function Navigation() {
   function backBtn() {
     navigate("/");
   }
-  console.log(location.pathname);
   return (
     <>
       {location.pathname.split("/")[1] !== "classDetails" ? (
