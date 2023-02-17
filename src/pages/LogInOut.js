@@ -19,7 +19,7 @@ export default function LogInOut() {
         setToken(response.data.token, {
           days: 10,
         });
-        navigate("/home");
+        navigate("/");
       })
       .catch(function (error) {
         console.log(error);
@@ -28,7 +28,7 @@ export default function LogInOut() {
   console.log(token);
   function handleLogOut() {
     setToken("");
-    navigate("/home");
+    navigate("/");
   }
   return (
     <div>

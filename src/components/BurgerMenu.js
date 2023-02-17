@@ -17,20 +17,12 @@ export default function BurgerMenu() {
     >
       <ul className="text-[28px]">
         <li className="my-4">
-          <Link to="/home">Home</Link>
-        </li>
-        <li className="my-4">
-          <Link to="/search">Search</Link>
+          <Link to="/">Home</Link>
         </li>
         {token !== undefined || "" ? (
-          <>
-            <li className="my-4">
-              <Link to="/myschedule">My Schedule</Link>
-            </li>
-            <li className="my-4">
-              <Link to="/logout">Log Out</Link>
-            </li>
-          </>
+          <li className="my-4">
+            <Link to="/logout">Log Out</Link>
+          </li>
         ) : (
           <li>
             <Link to="/logind">Log Ind</Link>

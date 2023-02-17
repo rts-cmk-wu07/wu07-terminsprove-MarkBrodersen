@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Fitness Verden - Terminsprøve
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Navn: Mark Brodersen
 
-## Available Scripts
+#### Hold: WU 07
 
-In the project directory, you can run:
+#### Uddanelse: Webudvikler
 
-### `npm start`
+## Tech-stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Jeg har valgt at bruge disse:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [React](#react)
+- [Tailwindcss](#tailwindcss)
+- [React-router-dom](#react-router-dom)
+- [Axios](#axios)
+- [Framer-motion](#framer-motion)
+- [Lucide-react](#lucide-react)
+- [React-use-cookie](#react-use-cookie)
 
-### `npm test`
+### React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Jeg brugt `react` da det giver mange gode værktøjer som f.eks. `useState` som laver en variable og en update funktion. Eller `useEffect` et form for loop som man kan styre hvornår det skal køre.
 
-### `npm run build`
+### Tailwindcss
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Jeg har valgt at bruge `tailwindcss` i stedet for `bootstrap` da `tailwindcss` er mere flexiblet og derfor som min primary form for styling da det også holde koden nemt overskuligt.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### React-Router-Dom
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Jeg bruger `react-router-dom` da den ikke genindlæser hele siden når man trykker på et `<Link>` tag, men i stedet skrifter dele af sidens HTML ud med et andet components HTML som bliver linket sammen.
 
-### `npm run eject`
+### Axios
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Jeg har brugt `axios` til alle mine fetch-kald da `axios` `stringifiy'er` dataen for dig
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Framer-motion
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Jeg valgte at tage brug af `framer-motion` da det giver unike former for animation. `framer-motion` gør det muligt at animere et component som bliver fjernet fra DOM'en med `AnimatePresence`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Lucide-react
 
-## Learn More
+Jeg valgte at bruge `lucide-react` som min icon pakke da den har mange forskellige iconer og gør det nemt at style dem.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### React-use-cookie
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Jeg bruger `react-use-cookie` da den gør det nemt at arbejde med cookies
